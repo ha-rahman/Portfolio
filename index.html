@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hazrat Ali - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1a05212f4a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, My Name is
+            <span style="color: #ff004f">Hazrat Ali</span>
+          </h1>
+          <h1>
+            I'm a Passionate-
+            <span id="element" style="color: rgb(183, 122, 239)"></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------About----------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/bg_2.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in
+              rerum illo. Magnam itaque error veritatis accusamus inventore
+              aspernatur beatae, at molestias? Quibusdam libero ad saepe labore
+              reiciendis totam, odit laborum porro obcaecati rerum sit atque
+              nihil, ullam adipisci nisi accusantium, ratione asperiores dicta
+              sequi impedit sapiente eius commodi. Qui.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>App Development</span><br />Building Android</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Android Developer</span><br />The Spark Foundation
+                </li>
+                <li>
+                  <span>Software Developer</span><br />Suven Consultants &
+                  Technology Pvt. Ltd.
+                </li>
+                <li>
+                  <span>Software Engineering Virtual Experience</span
+                  ><br />JPMorgan Chase & Co.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelore of Technology</span><br />Barak Valley
+                  Engineering College
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------Services--------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit dicta nemo nam ab in facilis modi, ut quas nobis
+              voluptate.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit dicta nemo nam ab in facilis modi, ut quas nobis
+              voluptate.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit dicta nemo nam ab in facilis modi, ut quas nobis
+              voluptate.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------Projects-------------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+      </div>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/project1.jpg" alt="" />
+          <div class="layer">
+            <h3>Chatting App</h3>
+            <p>
+              The real-time chatting app is a web-based platform using ReactJs,
+              NodeJs, ExpressJs, MongoDB and Socket.io. It allows users to
+              instantly communicate with each other through text-based
+              messaging.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/project2.jpg" alt="" />
+          <div class="layer">
+            <h3>Music Player</h3>
+            <p>
+              Developed a user-friendly Music Player app using Android Studio,
+              highlighting expertise in Java programming, UI design, and media
+              integration. Implemented seamless audio playback and intuitive
+              controls, highlighting proficiency in Android app development.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!-- <div class="work">
+          <img src="images/project3.jpg" alt="" />
+        </div> -->
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Software Engineer!",
+          "Web Developer!",
+          "Graphic Designer!",
+          "Problem Solver!",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
