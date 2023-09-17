@@ -15,13 +15,15 @@
       <div class="container">
         <nav>
           <img src="images/Logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <h1>
@@ -45,12 +47,22 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in
-              rerum illo. Magnam itaque error veritatis accusamus inventore
-              aspernatur beatae, at molestias? Quibusdam libero ad saepe labore
-              reiciendis totam, odit laborum porro obcaecati rerum sit atque
-              nihil, ullam adipisci nisi accusantium, ratione asperiores dicta
-              sequi impedit sapiente eius commodi. Qui.
+              I'm a final-year Computer Science student with a passion for
+              technology and a hunger for knowledge. I am always eager to learn
+              new technologies and keep up with the latest trends in the
+              industry. Working with a great company would be an excellent
+              opportunity to showcase my technical skills and learn even more
+              from experienced professionals. I am open to exploring different
+              areas of computer science and engineering and am always looking
+              for opportunities to expand my knowledge and skills. I also like
+              to participate in coding competitions and hackathons, as these
+              events are an excellent way to challenge myself and test my skills
+              against other talented individuals. I am a dedicated and
+              hardworking individual who is passionate about technology and
+              eager to make a positive impact in the industry. I believe that my
+              technical expertise, problem-solving skills, and enthusiasm for
+              learning make me a strong candidate for any company looking to
+              hire a talented and motivated software engineer.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -137,38 +149,104 @@
     <div id="projects">
       <div class="container">
         <h1 class="sub-title">My Projects</h1>
-      </div>
-      <div class="work-list">
-        <div class="work">
-          <img src="images/project1.jpg" alt="" />
-          <div class="layer">
-            <h3>Chatting App</h3>
-            <p>
-              The real-time chatting app is a web-based platform using ReactJs,
-              NodeJs, ExpressJs, MongoDB and Socket.io. It allows users to
-              instantly communicate with each other through text-based
-              messaging.
-            </p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/project1.jpg" alt="" />
+            <div class="layer">
+              <h3>Chatting App</h3>
+              <p>
+                The real-time chatting app is a web-based platform using
+                ReactJs, NodeJs, ExpressJs, MongoDB and Socket.io. It allows
+                users to instantly communicate with each other through
+                text-based messaging.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/project2.jpg" alt="" />
+            <div class="layer">
+              <h3>Music Player</h3>
+              <p>
+                Developed a user-friendly Music Player app using Android Studio,
+                highlighting expertise in Java programming, UI design, and media
+                integration. Implemented seamless audio playback and intuitive
+                controls, highlighting proficiency in Android app development.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/project2.jpg" alt="" />
+            <div class="layer">
+              <h3>Music Player</h3>
+              <p>
+                Developed a user-friendly Music Player app using Android Studio,
+                highlighting expertise in Java programming, UI design, and media
+                integration. Implemented seamless audio playback and intuitive
+                controls, highlighting proficiency in Android app development.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
           </div>
         </div>
-        <div class="work">
-          <img src="images/project2.jpg" alt="" />
-          <div class="layer">
-            <h3>Music Player</h3>
-            <p>
-              Developed a user-friendly Music Player app using Android Studio,
-              highlighting expertise in Java programming, UI design, and media
-              integration. Implemented seamless audio playback and intuitive
-              controls, highlighting proficiency in Android app development.
-            </p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- --------------Contact--------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>hazrat.cse@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>9085496656</p>
+            <div class="social-icons">
+              <a href="https://github.com/ha-rahman"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ha-rahman/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1gOkaZWnIxbALrCRAChnLgH1ncHg3EScb/view?usp=sharing"
+              class="btn btn2"
+              >Download</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Full Name..."
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email..."
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
           </div>
         </div>
-        <!-- <div class="work">
-          <img src="images/project3.jpg" alt="" />
-        </div> -->
       </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright &#169;2023 - All Rights Reserved - Hazrat Ali
+        <i class="fa-solid fa-heart"></i>
+      </p>
     </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
@@ -195,6 +273,34 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzkjALJ5_ay4JeRBv_lRorOiVZH6bFVs-nNb38vOmTBpRlgRYi7INRWls43XInfbmE/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
